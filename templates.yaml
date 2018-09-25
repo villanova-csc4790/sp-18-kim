@@ -1,0 +1,21 @@
+welcome: Welcome to Villanova Campus Events. If you would like to access all the features of this app, I will need you to authenticate. Would you like to authenticate or would you like to simply hear about today's events?
+
+agreeToAuthenticate: Ok please provide me with your Villanova banner number so I can check if you are in the database.
+
+doNotAuthenticate: Ok ask me about Villanova's events.
+
+authenticate: Please repeat each digit of the authorization code I just sent to your email.
+
+correct: Welcome {{username}}! You've been authenticated and now have access to all the features of Villanova campus events. You can ask me what events are happening at villanova.
+
+wrong: You did not repeat the code back properly and therefore do not have access to the application. Bye-bye!
+
+prohibited: You do not have access to this application without authorization. Bye-bye!
+
+email: Thanks! We found you in our system. Are you ready for me to send an authorization code to your Villanova email?
+
+notFound: We can't find you in our database. 
+
+events: Today, {{ eventOutput|join(", ") }}. 
+
+bye: Thank you for using Villanova Campus Events. Have a nice day!
