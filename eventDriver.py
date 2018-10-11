@@ -42,8 +42,7 @@ def identify(first, second, third, fourth, fifth, sixth, seventh, eighth):
 @ask.intent("YesIntent")
 def authenticate():
     global userEmail
-    server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
-    server.login("villanovacampusevents", "Wi4?Wkr9") 
+    server = smtplib.SMTP_SSL('smtp.gmail.com', 465) 
     SUBJECT = "Villanova Campus Events Authentication Code"
     TEXT = "Please repeat this code back to Alexa:\n "+('-'.join(map(str,code)))
     message = "Subject: {}\n\n{}".format(SUBJECT, TEXT)
